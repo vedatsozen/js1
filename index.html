@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SİTE 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li>
+            <a href="#" id="anasayfaa">Anasayfa</a>
+        </li>
+        <li>
+            <a href="#" id="hakkimizdaa">Hakkımızda</a>
+        </li>
+        <li>
+            <a href="#" id="referanslara">Referanslar</a>
+        </li>
+        <li>
+            <a href="#" id="iletisima">İletişim</a>
+        </li>
+    </ul>
+</nav>
+
+<header>
+
+<div id="headerinnercontainer">
+
+<div id="headersol">
+    <img id="manzara" src="manzara.jpg">
+    <div id="butonlar">
+        <button id="btn1">1</button>
+        <button id="btn2">2</button>
+        <button id="btn3">3</button>
+    </div>
+</div>
+
+<div id="headersag">
+    <div>
+        <h1 class="baslik">BİRİNCİ</h1>
+        <p class="altbaslik">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh nisi, bibendum eu tristique tempus, accumsan a enim. Mauris turpis odio, vestibulum eu dignissim et, maximus a felis. In sit amet pharetra metus. Morbi suscipit blandit porttitor. Ut eget lacus mauris. Fusce eget placerat neque, sit amet egestas ligula. Morbi augue mi, congue sed porta id, imperdiet sit amet ligula. Donec eu porttitor mauris, sed volutpat urna. Phasellus tempus rhoncus velit, at aliquet nibh accumsan ut. Donec mi justo, fermentum id tellus et, laoreet finibus eros.</p>
+        
+    </div>
+</div>
+
+</div>
+
+</header>
+
+
+<script>
+
+let btn1 = document.getElementById("btn1");
+
+let btn2 = document.getElementById("btn2");
+
+let btn3 = document.getElementById("btn3");
+
+let manzara = document.getElementById("manzara");
+
+
+btn1.addEventListener("click", function() {
+manzara.src = "manzara.jpg";
+document.getElementsByClassName("baslik")[0].innerHTML = "BİRİNCİ";
+document.getElementsByClassName("altbaslik")[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh nisi, bibendum eu tristique tempus, accumsan a enim. Mauris turpis odio, vestibulum eu dignissim et, maximus a felis. In sit amet pharetra metus. Morbi suscipit blandit porttitor. Ut eget lacus mauris. Fusce eget placerat neque, sit amet egestas ligula. Morbi augue mi, congue sed porta id, imperdiet sit amet ligula. Donec eu porttitor mauris, sed volutpat urna. Phasellus tempus rhoncus velit, at aliquet nibh accumsan ut. Donec mi justo, fermentum id tellus et, laoreet finibus eros.";
+});
+
+btn2.addEventListener("click", function() {
+manzara.src = "manzara2.jpg"; 
+document.getElementsByClassName("baslik")[0].innerHTML = "İKİNCİ";
+document.getElementsByClassName("altbaslik")[0].innerHTML = "Nunc eleifend nunc erat, ac tincidunt sem convallis id. Curabitur a massa id ipsum fringilla dapibus a scelerisque lectus. Vivamus bibendum felis ultricies massa interdum posuere. Integer nec iaculis risus. Nulla maximus egestas sem. Praesent blandit justo et justo auctor mattis. Mauris suscipit malesuada neque id rhoncus. Sed id mi eu est convallis auctor. Donec volutpat ex quis est finibus, vel vulputate mauris aliquam. Mauris convallis sem vitae lacus blandit, eleifend feugiat magna malesuada. Sed et hendrerit augue, at vulputate justo. Mauris suscipit, elit et efficitur bibendum, dolor magna aliquet nulla, a egestas nulla dui a tortor. Sed egestas sapien in fringilla cursus. Nulla facilisi.";
+});
+
+btn3.addEventListener("click", function() {
+manzara.src = "manzara3.jpg";
+document.getElementsByClassName("baslik")[0].innerHTML = "ÜÇÜNCÜ";
+document.getElementsByClassName("altbaslik")[0].innerHTML = "Vivamus dapibus facilisis vulputate. Aliquam ante sem, feugiat vitae tincidunt in, suscipit luctus tellus. Pellentesque vel ante eu est vestibulum porta. Etiam tincidunt, nisl nec consectetur malesuada, erat erat blandit nibh, id dapibus massa lectus sit amet felis. Maecenas nec enim sed augue efficitur auctor vel eget dolor. Aenean tempus arcu massa, a semper sapien lacinia vitae. Integer eleifend velit eros, non porttitor sem tempus ut. Etiam eu nulla iaculis, sollicitudin metus sed, ultrices lacus. Quisque ornare sollicitudin facilisis. Praesent et dui in mi mattis dignissim eget at tellus. Duis luctus ante eu convallis interdum. Integer tincidunt elit ut enim sagittis hendrerit. Vestibulum eget feugiat velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin feugiat porta nisl, vitae congue diam viverra sit amet. Nunc quis tellus nunc.";
+});
+
+</script>
+</body>
+</html>
